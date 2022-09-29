@@ -1412,9 +1412,10 @@ h6:hover .anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Reshape-and-visualize-data-for-PCA">Reshape and visualize data for PCA<a class="anchor-link" href="#Reshape-and-visualize-data-for-PCA">&#182;</a></h2><p><em>Figure illustrating the setup and transformation of the image dataset to serve as input
 to the PCA algorithm. The first section shows a sample profile extracted from the image sequence. Similar profiles are obtained across the image plane to form a matrix which then serves as input to the PCA algorithm to yield the PCs and projections</em></p>
-<p><img src="./images/data-setup.PNG" alt="Illustrating the setup and transformation of the image dataset to serve as input
-to the PCA algorithm. T"></p>
-<p><img src='http://akin-aroge.github.io/images/ChutesAndLadders-board.png' width=400 alt='[img: Chutes and ladders game board]'/></p>
+<!-- ![Illustrating the setup and transformation of the image dataset to serve as input
+to the PCA algorithm. T](./images/data-setup.PNG) -->
+
+<p><img src='http://akin-aroge.github.io/images/data-setup.PNG' width=800 alt='[img: Illustrating the setup and transformation of the image dataset to serve as input to the PCA algorithm]'/></p>
 <p>First, individual saturation profiles are extracted from the sequence of radiograph to form a matrix, $X$ as illustrated in Fig.~\ref{fig:data-setup}.
 Given a sequence of images ${I_1, \ldots , I_d}$ where each image $I_i$ is of dimension $r$ by $c$ (representing the number of rows and columns respectively), a vector $x_i$ may be formed which consist of a point $(i, j)$ in each image in the sequence, such that $x_i$ consists of the values $\left(I_1(i, j), I_2(i, j), \ldots , I_d(i, j)\right)$. When we consider all such points $(i, j)$ in the plane, we have a set vectors $X = {x_1, x_2, \ldots , x_{r \times c}}$ which can be represented as a matrix $X$ of dimension $n$ by $d$, where $n = r \times c$.  %Essentially, 
 Each vector in the matrix $X$ now consists of the GSV profile for each point in the image plane, from which relevant liquid water distribution and dynamics may be extracted.</p>
